@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher with Background Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="theme-demo">
+        <fieldset class="theme-switcher" role="radiogroup" aria-label="Theme selection">
+            <input type="radio" id="theme-light" name="theme" value="light" checked aria-label="Light theme">
+            <label for="theme-light">
+                <span class="theme-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </svg>
+                </span>
+                Light
+            </label>
+
+            <input type="radio" id="theme-dark" name="theme" value="dark" aria-label="Dark theme">
+            <label for="theme-dark">
+                <span class="theme-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg></span>
+                Dark
+            </label>
+
+            <input type="radio" id="theme-forest" name="theme" value="forest" aria-label="Forest theme">
+            <label for="theme-forest">
+                <span class="theme-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 19 2c1 2 2 4.5 2 8 0 5.5-4.78 10-10 10Z" />
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                    </svg></span>
+                Forest
+            </label>
+
+            <input type="radio" id="theme-ocean" name="theme" value="ocean" aria-label="Ocean theme">
+            <label for="theme-ocean">
+                <span class="theme-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M2 12h2" />
+                        <path d="M6 8h2" />
+                        <path d="M10 16h2" />
+                        <path d="M14 6h2" />
+                        <path d="M18 14h2" />
+                        <path d="M22 10h-2" />
+                    </svg></span>
+                Ocean
+            </label>
+
+            <input type="radio" id="theme-sunset" name="theme" value="sunset" aria-label="Sunset theme">
+            <label for="theme-sunset">
+                <span class="theme-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <line x1="2" y1="20" x2="22" y2="20" />
+                        <path d="M12 10a4 4 0 0 0-4 4" />
+                        <line x1="12" y1="4" x2="12" y2="2" />
+                        <line x1="4.22" y1="6.22" x2="5.64" y2="7.64" />
+                        <line x1="19.78" y1="6.22" x2="18.36" y2="7.64" />
+                        <line x1="8" y1="14" x2="8" y2="17" />
+                        <line x1="16" y1="14" x2="16" y2="17" />
+                    </svg></span>
+                Sunset
+            </label>
+        </fieldset>
+
+        <!-- ============================================
+             PREVIEW CARD - Uses Only CSS Variables
+             ============================================ -->
+        <article class="preview-card">
+            <span class="card-badge">✨ New Feature</span>
+
+            <h2 class="card-heading">
+                Design Tokens Power Theming
+            </h2>
+
+            <p class="card-paragraph">
+                This card uses CSS custom properties for all its styling.
+                Switch between themes to see how the same markup renders
+                differently using token-based design with matching
+                static background imagery. No JavaScript required.
+            </p>
+
+            <div class="card-features">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>CSS Variables</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>:has() Selector</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>BG Images</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Accessible</span>
+                </div>
+            </div>
+
+            <button class="card-button" type="button">
+                Learn More →
+            </button>
+        </article>
+    </main>
+</body>
+
+</html>
