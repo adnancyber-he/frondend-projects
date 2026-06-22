@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AUREL&Iacute;A &mdash; Private Real Estate</title>
+<meta name="description" content="Aurel&iacute;a is a private real estate house representing the world's most exceptional residences, estates and architectural commissions.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== LOADER ===================== -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-mark">
+      <svg viewBox="0 0 120 120" class="loader-seal">
+        <circle cx="60" cy="60" r="54" class="seal-ring"/>
+        <path d="M60 24 L60 96 M30 60 L90 60" class="seal-cross"/>
+      </svg>
+    </div>
+    <div class="loader-word">AUREL&Iacute;A</div>
+    <div class="loader-bar"><div class="loader-bar-fill" id="loaderFill"></div></div>
+    <div class="loader-pct" id="loaderPct">00</div>
+  </div>
+</div>
+
+
+<div class="grain"></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">
+      <span class="nav-logo-mark">A</span>
+      <span class="nav-logo-word">AUREL&Iacute;A</span>
+    </a>
+
+    <nav class="nav-links">
+      <div class="nav-item has-mega" id="collectionsTrigger">
+        <button class="nav-link">Collections</button>
+        <div class="mega" id="mega">
+          <div class="mega-grid">
+            <a href="#collections" class="mega-col" data-collection="villas">
+              <span class="mega-num">01</span>
+              <span class="mega-title">Private Villas</span>
+              <span class="mega-desc">Walled estates, gardens &amp; pavilions</span>
+            </a>
+            <a href="#collections" class="mega-col" data-collection="apartments">
+              <span class="mega-num">02</span>
+              <span class="mega-title">Sky Residences</span>
+              <span class="mega-desc">Penthouses above the skyline</span>
+            </a>
+            <a href="#collections" class="mega-col" data-collection="commercial">
+              <span class="mega-num">03</span>
+              <span class="mega-title">Commercial Estates</span>
+              <span class="mega-desc">Landmark addresses &amp; headquarters</span>
+            </a>
+            <a href="#collections" class="mega-col" data-collection="investment">
+              <span class="mega-num">04</span>
+              <span class="mega-title">Investment Portfolios</span>
+              <span class="mega-desc">Curated yield &amp; legacy assets</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#properties" class="nav-link">Residences</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#invest" class="nav-link">Investment</a>
+      <a href="#contact" class="nav-link">Advisory</a>
+    </nav>
+
+    <div class="nav-cta-wrap">
+      <a href="#contact" class="btn btn-ghost magnetic"><span>Book a Private Viewing</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== MOBILE MENU ===================== -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#properties">Residences</a>
+  <a href="#collections">Collections</a>
+  <a href="#experience">Experience</a>
+  <a href="#invest">Investment</a>
+  <a href="#contact">Advisory</a>
+  <a href="#contact" class="btn btn-gold" style="margin-top:24px;display:inline-flex">Book a Private Viewing</a>
+</div>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-media">
+      <img id="heroImg" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2400&auto=format&fit=crop" alt="A private cliffside villa with infinity pool at dusk">
+      <div class="hero-gradient"></div>
+    </div>
+
+    <svg class="hero-thread" viewBox="0 0 1600 900" preserveAspectRatio="none">
+      <path id="heroThreadPath" d="M -100 760 C 300 700, 500 820, 900 700 S 1500 600, 1750 660" />
+    </svg>
+
+    <div class="hero-content">
+      <p class="eyebrow reveal-line"><span>Est. 1994 &mdash; Private Real Estate House</span></p>
+      <h1 class="hero-title">
+        <span class="line"><span class="word">Residences</span></span>
+        <span class="line"><span class="word">beyond</span> <span class="word word-serif">ordinary</span></span>
+        <span class="line"><span class="word">wealth.</span></span>
+      </h1>
+      <p class="hero-sub reveal-line"><span>We represent fewer than 200 addresses on earth &mdash; each one chosen, not listed.</span></p>
+
+      <div class="hero-actions reveal-line">
+        <a href="#properties" class="btn btn-gold magnetic"><span>View the Collection</span></a>
+        <a href="#experience" class="btn btn-text magnetic"><span>Watch the Film</span> <i class="play-dot"></i></a>
+      </div>
+
+      <div class="hero-trust">
+        <div class="trust-stat">
+          <span class="trust-num" data-count="2.4" data-suffix="B+">0</span>
+          <span class="trust-label">USD Transacted</span>
+        </div>
+        <div class="trust-div"></div>
+        <div class="trust-stat">
+          <span class="trust-num" data-count="184" data-suffix="">0</span>
+          <span class="trust-label">Residences Sold</span>
+        </div>
+        <div class="trust-div"></div>
+        <div class="trust-stat">
+          <span class="trust-num" data-count="31" data-suffix="">0</span>
+          <span class="trust-label">Countries</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"><i></i></div>
+    </div>
+  </section>
+
+  <!-- ===================== LOGO MARQUEE ===================== -->
+  <section class="marquee-section">
+    <p class="marquee-label">As entrusted by families featured in</p>
+    <div class="marquee" id="marquee">
+      <div class="marquee-track">
+        <span>FORBES</span><span>ARCHITECTURAL DIGEST</span><span>THE WALL STREET JOURNAL</span><span>WALLPAPER*</span><span>BLOOMBERG</span><span>MONOCLE</span>
+        <span>FORBES</span><span>ARCHITECTURAL DIGEST</span><span>THE WALL STREET JOURNAL</span><span>WALLPAPER*</span><span>BLOOMBERG</span><span>MONOCLE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED PROPERTIES ===================== -->
+  <section class="properties" id="properties">
+    <div class="section-head">
+      <p class="eyebrow"><span class="thread-dot"></span>Featured Residences</p>
+      <h2 class="section-title">A small number of <em>exceptional</em> addresses</h2>
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="villa">Villas</button>
+        <button class="filter-tab" data-filter="penthouse">Penthouses</button>
+        <button class="filter-tab" data-filter="estate">Estates</button>
+        <button class="filter-tab" data-filter="commercial">Commercial</button>
+      </div>
+    </div>
+
+    <div class="property-grid" id="propertyGrid">
+      <!-- Cards injected / present statically below -->
+      <article class="property-card" data-cat="villa">
+        <div class="pc-media">
+          <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1600&auto=format&fit=crop" alt="Modern cliffside villa, Amalfi Coast">
+          <span class="pc-tag">New</span>
+          <button class="pc-fav" aria-label="Save residence">&#9825;</button>
+        </div>
+        <div class="pc-body">
+          <div class="pc-top">
+            <h3>Villa Celestine</h3>
+            <span class="pc-price">$48,500,000</span>
+          </div>
+          <p class="pc-loc">Amalfi Coast, Italy</p>
+          <div class="pc-specs">
+            <span>7 Bed</span><span>9 Bath</span><span>1,420 m&sup2;</span>
+          </div>
+          <a href="#contact" class="pc-link">View Residence <i>&rarr;</i></a>
+        </div>
+      </article>
+
+      <article class="property-card" data-cat="penthouse">
+        <div class="pc-media">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop" alt="Glass penthouse interior overlooking the skyline">
+          <span class="pc-tag">Exclusive</span>
+          <button class="pc-fav" aria-label="Save residence">&#9825;</button>
+        </div>
+        <div class="pc-body">
+          <div class="pc-top">
+            <h3>The Meridian Sky</h3>
+            <span class="pc-price">$36,900,000</span>
+          </div>
+          <p class="pc-loc">Manhattan, New York</p>
+          <div class="pc-specs">
+            <span>4 Bed</span><span>5 Bath</span><span>610 m&sup2;</span>
+          </div>
+          <a href="#contact" class="pc-link">View Residence <i>&rarr;</i></a>
+        </div>
+      </article>
+
+      <article class="property-card" data-cat="estate">
+        <div class="pc-media">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1600&auto=format&fit=crop" alt="Private country estate with manicured grounds">
+          <span class="pc-tag">Private Sale</span>
+          <button class="pc-fav" aria-label="Save residence">&#9825;</button>
+        </div>
+        <div class="pc-body">
+          <div class="pc-top">
+            <h3>Hartwell Estate</h3>
+            <span class="pc-price">$72,000,000</span>
+          </div>
+          <p class="pc-loc">Cotswolds, England</p>
+          <div class="pc-specs">
+            <span>11 Bed</span><span>14 Bath</span><span>22 Acres</span>
+          </div>
+          <a href="#contact" class="pc-link">View Residence <i>&rarr;</i></a>
+        </div>
+      </article>
+
+      <article class="property-card" data-cat="villa">
+        <div class="pc-media">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1600&auto=format&fit=crop" alt="Modern villa with infinity pool at night">
+          <span class="pc-tag">New</span>
+          <button class="pc-fav" aria-label="Save residence">&#9825;</button>
+        </div>
+        <div class="pc-body">
+          <div class="pc-top">
+            <h3>Villa Noctis</h3>
+            <span class="pc-price">$54,200,000</span>
+          </div>
+          <p class="pc-loc">Punta Mita, Mexico</p>
+          <div class="pc-specs">
+            <span>6 Bed</span><span>8 Bath</span><span>980 m&sup2;</span>
+          </div>
+          <a href="#contact" class="pc-link">View Residence <i>&rarr;</i></a>
+        </div>
+      </article>
+
+      <article class="property-card" data-cat="commercial">
+        <div class="pc-media">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1600&auto=format&fit=crop" alt="Landmark commercial tower entrance">
+          <span class="pc-tag">Income</span>
+          <button class="pc-fav" aria-label="Save residence">&#9825;</button>
+        </div>
+        <div class="pc-body">
+          <div class="pc-top">
+            <h3>The Hallmark Tower</h3>
+            <span class="pc-price">$210,000,000</span>
+          </div>
+          <p class="pc-loc">Singapore</p>
+          <div class="pc-specs">
+            <span>28 Floors</span><span>6.1% Yield</span><span>41,000 m&sup2;</span>
+          </div>
+          <a href="#contact" class="pc-link">View Residence <i>&rarr;</i></a>
+        </div>
+      </article>
+
+      <article class="property-card" data-cat="penthouse">
+        <div class="pc-media">
+          <img src="https://images.unsplash.com/photo-1567496898669-ee935f5f647a?q=80&w=1600&auto=format&fit=crop" alt="Modern penthouse terrace at sunset">
+          <span class="pc-tag">Exclusive</span>
+          <button class="pc-fav" aria-label="Save residence">&#9825;</button>
+        </div>
+        <div class="pc-body">
+          <div class="pc-top">
+            <h3>Atelier Penthouse</h3>
+            <span class="pc-price">$29,750,000</span>
+          </div>
+          <p class="pc-loc">Monaco</p>
+          <div class="pc-specs">
+            <span>3 Bed</span><span>4 Bath</span><span>410 m&sup2;</span>
+          </div>
+          <a href="#contact" class="pc-link">View Residence <i>&rarr;</i></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="why" id="why">
+    <svg class="thread-vertical" viewBox="0 0 4 1000" preserveAspectRatio="none">
+      <path id="whyThreadPath" d="M2 0 L2 1000"/>
+    </svg>
+
+    <div class="section-head">
+      <p class="eyebrow"><span class="thread-dot"></span>The Aurel&iacute;a Standard</p>
+      <h2 class="section-title">Discretion is our <em>architecture</em></h2>
+      <p class="section-lede">Three decades representing the kind of property that rarely reaches a window display &mdash; let alone the internet.</p>
+    </div>
+
+    <div class="why-stats">
+      <div class="why-stat">
+        <span class="why-num" data-count="31">0</span>
+        <span class="why-label">Years of Legacy</span>
+      </div>
+      <div class="why-stat">
+        <span class="why-num" data-count="2.4" data-suffix="B">0</span>
+        <span class="why-label">Total Sales Volume (USD)</span>
+      </div>
+      <div class="why-stat">
+        <span class="why-num" data-count="98" data-suffix="%">0</span>
+        <span class="why-label">Off-Market Discretion Rate</span>
+      </div>
+      <div class="why-stat">
+        <span class="why-num" data-count="11" data-suffix=" days">0</span>
+        <span class="why-label">Average Time to Close</span>
+      </div>
+    </div>
+
+    <div class="why-pillars">
+      <div class="pillar">
+        <svg class="pillar-icon" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20"/><path d="M24 14v10l7 5"/></svg>
+        <h3>Absolute Discretion</h3>
+        <p>Every transaction is conducted under strict confidentiality, off-market where our clients require it.</p>
+      </div>
+      <div class="pillar">
+        <svg class="pillar-icon" viewBox="0 0 48 48"><path d="M8 38 L24 10 L40 38 Z"/><path d="M16 38 L24 24 L32 38"/></svg>
+        <h3>Architectural Authority</h3>
+        <p>A standing partnership with the world's foremost architecture studios informs every acquisition.</p>
+      </div>
+      <div class="pillar">
+        <svg class="pillar-icon" viewBox="0 0 48 48"><rect x="10" y="10" width="28" height="28" rx="2"/><path d="M10 22h28"/></svg>
+        <h3>Capital Stewardship</h3>
+        <p>An in-house investment desk models appreciation, yield and exit across every asset we represent.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COLLECTIONS (horizontal scroll) ===================== -->
+  <section class="collections" id="collections">
+    <div class="section-head">
+      <p class="eyebrow"><span class="thread-dot"></span>Collections</p>
+      <h2 class="section-title">Four ways to <em>own</em> the extraordinary</h2>
+    </div>
+
+    <div class="hscroll-wrap" id="hscrollWrap">
+      <div class="hscroll-track" id="hscrollTrack">
+        <div class="hscroll-panel">
+          <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=1600&auto=format&fit=crop" alt="Private villa with garden courtyard">
+          <div class="hp-copy">
+            <span class="hp-num">01</span>
+            <h3>Private Villas</h3>
+            <p>Walled estates and architect-built sanctuaries set apart from the world, each with its own private staff and grounds.</p>
+            <a href="#properties" class="pc-link">Explore Villas <i>&rarr;</i></a>
+          </div>
+        </div>
+        <div class="hscroll-panel">
+          <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1600&auto=format&fit=crop" alt="Sky residence with floor to ceiling glass">
+          <div class="hp-copy">
+            <span class="hp-num">02</span>
+            <h3>Sky Residences</h3>
+            <p>Full-floor apartments and penthouses commanding skylines from Manhattan to Marina Bay.</p>
+            <a href="#properties" class="pc-link">Explore Residences <i>&rarr;</i></a>
+          </div>
+        </div>
+        <div class="hscroll-panel">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1600&auto=format&fit=crop" alt="Commercial landmark tower exterior">
+          <div class="hp-copy">
+            <span class="hp-num">03</span>
+            <h3>Commercial Estates</h3>
+            <p>Landmark headquarters and trophy assets in the world's most resilient commercial districts.</p>
+            <a href="#properties" class="pc-link">Explore Commercial <i>&rarr;</i></a>
+          </div>
+        </div>
+        <div class="hscroll-panel">
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1600&auto=format&fit=crop" alt="Interior of a curated investment property">
+          <div class="hp-copy">
+            <span class="hp-num">04</span>
+            <h3>Investment Portfolios</h3>
+            <p>Curated baskets of yielding residential and commercial assets, structured for multi-generational holding.</p>
+            <a href="#invest" class="pc-link">Explore Investment <i>&rarr;</i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INTERACTIVE EXPERIENCE (pinned walkthrough) ===================== -->
+  <section class="experience" id="experience">
+    <div class="exp-pin" id="expPin">
+      <div class="exp-media">
+        <img class="exp-img active" data-idx="0" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop" alt="Entrance foyer of a private residence">
+        <img class="exp-img" data-idx="1" src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=2000&auto=format&fit=crop" alt="Living room of a luxury residence">
+        <img class="exp-img" data-idx="2" src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2000&auto=format&fit=crop" alt="Dining and kitchen space">
+        <img class="exp-img" data-idx="3" src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2000&auto=format&fit=crop" alt="Pool terrace at dusk">
+        <div class="exp-gradient"></div>
+      </div>
+
+      <div class="exp-copy">
+        <p class="eyebrow"><span class="thread-dot"></span>The Walkthrough</p>
+        <div class="exp-step active" data-idx="0">
+          <span class="exp-step-num">01 / Arrival</span>
+          <h3>An entrance with intent</h3>
+          <p>Every Aurel&iacute;a residence opens with a foyer engineered for the first thirty seconds &mdash; light, scale, and silence, calibrated.</p>
+        </div>
+        <div class="exp-step" data-idx="1">
+          <span class="exp-step-num">02 / Living</span>
+          <h3>Rooms that hold their breath</h3>
+          <p>Double-height living spaces are positioned along true sightlines to the landscape, never the street.</p>
+        </div>
+        <div class="exp-step" data-idx="2">
+          <span class="exp-step-num">03 / Gathering</span>
+          <h3>Kitchens built for staff, not show</h3>
+          <p>Working kitchens are sized for full culinary teams, finished to the standard of the rooms beside them.</p>
+        </div>
+        <div class="exp-step" data-idx="3">
+          <span class="exp-step-num">04 / Outdoors</span>
+          <h3>The hour before dusk</h3>
+          <p>Pools, terraces and pavilions are oriented for one specific hour of golden light &mdash; the one your guests remember.</p>
+        </div>
+
+        <div class="exp-floorplan">
+          <svg viewBox="0 0 360 220" id="floorplanSvg">
+            <rect x="10" y="10" width="160" height="90" class="fp-room"/>
+            <rect x="180" y="10" width="170" height="60" class="fp-room"/>
+            <rect x="180" y="80" width="170" height="60" class="fp-room"/>
+            <rect x="10" y="110" width="100" height="100" class="fp-room"/>
+            <rect x="120" y="150" width="230" height="60" class="fp-room"/>
+            <text x="20" y="35" class="fp-label">FOYER</text>
+            <text x="190" y="35" class="fp-label">LIVING</text>
+            <text x="190" y="105" class="fp-label">KITCHEN</text>
+            <text x="20" y="135" class="fp-label">STUDY</text>
+            <text x="130" y="175" class="fp-label">TERRACE</text>
+          </svg>
+          <span class="fp-caption">Indicative floor plan &mdash; Villa Celestine, Level 01</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-head">
+      <p class="eyebrow"><span class="thread-dot"></span>Client Stories</p>
+      <h2 class="section-title">Held in <em>confidence</em>, told with permission</h2>
+    </div>
+
+    <div class="test-carousel">
+      <div class="test-track" id="testTrack">
+        <article class="test-card active">
+          <p class="test-quote">&ldquo;They found Hartwell before it existed on paper &mdash; a conversation with the family, eighteen months before the for-sale sign that never came.&rdquo;</p>
+          <div class="test-meta">
+            <span class="test-name">Private Collector</span>
+            <span class="test-loc">London &middot; Acquired an English Estate</span>
+          </div>
+        </article>
+        <article class="test-card">
+          <p class="test-quote">&ldquo;Our penthouse sale closed in eleven days, fully off-market, with the press finding out after we had already moved.&rdquo;</p>
+          <div class="test-meta">
+            <span class="test-name">Family Office Principal</span>
+            <span class="test-loc">Singapore &middot; Sold a Sky Residence</span>
+          </div>
+        </article>
+        <article class="test-card">
+          <p class="test-quote">&ldquo;The investment desk modelled three exit strategies before we'd even toured the property. That is the difference.&rdquo;</p>
+          <div class="test-meta">
+            <span class="test-name">Managing Partner</span>
+            <span class="test-loc">New York &middot; Investment Portfolio</span>
+          </div>
+        </article>
+      </div>
+      <div class="test-nav">
+        <button id="testPrev" aria-label="Previous">&larr;</button>
+        <div class="test-dots" id="testDots"></div>
+        <button id="testNext" aria-label="Next">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INVESTMENT ===================== -->
+  <section class="invest" id="invest">
+    <div class="section-head">
+      <p class="eyebrow"><span class="thread-dot"></span>Investment Desk</p>
+      <h2 class="section-title">Property, modelled like <em>capital</em></h2>
+      <p class="section-lede">A decade of appreciation across the Aurel&iacute;a Index versus the broader luxury residential market.</p>
+    </div>
+
+    <div class="invest-grid">
+      <div class="invest-chart-card">
+        <div class="chart-head">
+          <span>Aurel&iacute;a Index &mdash; 10yr Appreciation</span>
+          <span class="chart-roi">+212%</span>
+        </div>
+        <svg viewBox="0 0 640 260" class="roi-chart" id="roiChart">
+          <defs>
+            <linearGradient id="roiGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.45"/>
+              <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <line x1="0" y1="65" x2="640" y2="65" class="grid-line"/>
+          <line x1="0" y1="130" x2="640" y2="130" class="grid-line"/>
+          <line x1="0" y1="195" x2="640" y2="195" class="grid-line"/>
+          <path id="roiAreaPath" class="roi-area" d="M0,210 L64,200 L128,185 L192,178 L256,150 L320,140 L384,108 L448,90 L512,55 L576,35 L640,18 L640,260 L0,260 Z"/>
+          <path id="roiLinePath" class="roi-line" d="M0,210 L64,200 L128,185 L192,178 L256,150 L320,140 L384,108 L448,90 L512,55 L576,35 L640,18"/>
+          <path id="roiDashedPath" class="roi-line-dashed" d="M0,235 L64,232 L128,228 L192,222 L256,214 L320,204 L384,192 L448,178 L512,162 L576,144 L640,124"/>
+        </svg>
+        <div class="chart-foot">
+          <span>2016</span><span>2018</span><span>2020</span><span>2022</span><span>2024</span><span>2026</span>
+        </div>
+        <div class="chart-legend">
+          <span><i class="dot gold"></i> Aurel&iacute;a Index</span>
+          <span><i class="dot gray"></i> Luxury Market Avg.</span>
+        </div>
+      </div>
+
+      <div class="invest-tiers">
+        <div class="tier-card">
+          <span class="tier-name">Foundation</span>
+          <span class="tier-yield">4.8&ndash;5.6%</span>
+          <span class="tier-desc">Net annual yield, residential income assets</span>
+        </div>
+        <div class="tier-card featured">
+          <span class="tier-badge">Most Allocated</span>
+          <span class="tier-name">Heritage</span>
+          <span class="tier-yield">6.1&ndash;7.4%</span>
+          <span class="tier-desc">Net annual yield, mixed commercial estates</span>
+        </div>
+        <div class="tier-card">
+          <span class="tier-name">Legacy</span>
+          <span class="tier-yield">9&ndash;14%</span>
+          <span class="tier-desc">Projected IRR, development &amp; repositioning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <p class="eyebrow"><span class="thread-dot"></span>Private Advisory</p>
+        <h2 class="section-title">Begin a <em>confidential</em> conversation</h2>
+        <p class="section-lede">No listings are published in full. Tell us what you are looking for, and an advisor will reach you within one business day.</p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="field">
+              <input type="text" id="fName" required placeholder=" ">
+              <label for="fName">Full name</label>
+            </div>
+            <div class="field">
+              <input type="email" id="fEmail" required placeholder=" ">
+              <label for="fEmail">Email address</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <input type="tel" id="fPhone" placeholder=" ">
+              <label for="fPhone">Phone (optional)</label>
+            </div>
+            <div class="field">
+              <select id="fInterest" required>
+                <option value="" disabled selected hidden></option>
+                <option>Acquiring a Residence</option>
+                <option>Selling a Residence</option>
+                <option>Investment Portfolio</option>
+                <option>Architectural Commission</option>
+              </select>
+              <label for="fInterest" class="select-label">Area of interest</label>
+            </div>
+          </div>
+          <div class="field">
+            <textarea id="fMessage" rows="3" placeholder=" "></textarea>
+            <label for="fMessage">Tell us about your search</label>
+          </div>
+          <button type="submit" class="btn btn-gold magnetic" id="submitBtn"><span>Request a Private Consultation</span></button>
+          <p class="form-success" id="formSuccess">Thank you &mdash; your advisor will be in touch shortly.</p>
+        </form>
+      </div>
+
+
+          <div class="office">
+            <h4>New York</h4>
+            <p>740 Madison Avenue, NY 10065</p>
+          </div>
+          <div class="office">
+            <h4>London</h4>
+            <p>14 Grosvenor Square, W1K 6LB</p>
+          </div>
+          <div class="office">
+            <h4>Singapore</h4>
+            <p>1 Raffles Place, 048616</p>
+          </div>
+          <div class="office">
+            <h4>Dubai</h4>
+            <p>Emirates Towers, DIFC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="nav-logo-mark">A</span>
+      <span class="nav-logo-word">AUREL&Iacute;A</span>
+      <p>Private real estate house. By introduction and by appointment.</p>
+    </div>
+    <div class="footer-news">
+      <h4>The Quiet List</h4>
+      <p>Off-market residences, sent privately. No more than once a month.</p>
+      <form class="news-form">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit" aria-label="Subscribe">&rarr;</button>
+      </form>
+    </div>
+  </div>
+  <svg class="footer-thread" viewBox="0 0 1600 4" preserveAspectRatio="none"><path id="footerThreadPath" d="M0 2 L1600 2"/></svg>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Aurel&iacute;a Private Real Estate. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
